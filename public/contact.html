@@ -101,7 +101,8 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="forms/contact.php" method="post" role="form" class="contact-form">
+
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -195,5 +196,34 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 </body>
+
+</html>
+
+
+<!-- Firebase Authentication -->
+<script type="module">
+
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+  import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyDun7AR84vlMvvKbhohwn8afRKRh6htpTI",
+    authDomain: "el-care-f4bdf.firebaseapp.com",
+    databaseURL: "https://el-care-f4bdf-default-rtdb.firebaseio.com",
+    projectId: "el-care-f4bdf",
+    storageBucket: "el-care-f4bdf.appspot.com",
+    messagingSenderId: "121808468776",
+    appId: "1:121808468776:web:21a85ab79d95043d912e1d"
+  };
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const database = getDatabase(app);
+  const auth = getAuth();
+</script>
 
 </html>
