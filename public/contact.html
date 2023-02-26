@@ -5,8 +5,6 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>El-Care</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon-logo.png" rel="icon">
@@ -31,7 +29,6 @@
 </head>
 
 <body>
-
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
@@ -39,8 +36,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="about.html">About Us</a></li>
-          <li><a href="team.html">Our Team</a></li>
-          <li><a href="testimonials.html">Reviews/Feedbacks & Testimonials</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
           <li><a href="services.html">Services Offered</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
@@ -117,11 +113,7 @@
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
+              <br>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
@@ -196,34 +188,5 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 </body>
-
-</html>
-
-
-<!-- Firebase Authentication -->
-<script type="module">
-
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-  import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
-  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyDun7AR84vlMvvKbhohwn8afRKRh6htpTI",
-    authDomain: "el-care-f4bdf.firebaseapp.com",
-    databaseURL: "https://el-care-f4bdf-default-rtdb.firebaseio.com",
-    projectId: "el-care-f4bdf",
-    storageBucket: "el-care-f4bdf.appspot.com",
-    messagingSenderId: "121808468776",
-    appId: "1:121808468776:web:21a85ab79d95043d912e1d"
-  };
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const database = getDatabase(app);
-  const auth = getAuth();
-</script>
 
 </html>
