@@ -39,6 +39,12 @@
           "-ms-touch-action"
         ]
       }
+    ],
+    "axe/parsing": [
+      "default",
+      {
+        "duplicate-id-active": "off"
+      }
     ]
   }
 }
