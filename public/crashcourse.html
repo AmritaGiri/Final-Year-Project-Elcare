@@ -71,6 +71,7 @@
         <!-- ======= End Breadcrumbs ======= -->
 
         <!-- ======= Crash Course Form ======= -->
+
         <button class="btn btn-primary my-5">
             <a href="display.php" class="text-light">Create a Booking for yourself</a>
         </button>
@@ -141,8 +142,8 @@
     <script src="assets/js/main.js"></script>
 
 
-    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"></script>
     <!-- Firebase Authentication -->
     <script type="module">
         // Import the functions you need from the SDKs you need
@@ -163,9 +164,14 @@
             appId: "1:153749159908:web:77ffbab9564afe52ef11f1"
         };
 
+        firebase.initializeApp(firebaseConfig);
+
+        // Get a reference to the database instance
+        const database = firebase.database();
+
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
-        const database = getDatabase(app);
+        //const database = getDatabase(app);
     </script>
     <script src="assets/js/crud.js"></script>
 </body>

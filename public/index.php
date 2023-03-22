@@ -1,3 +1,33 @@
+<?php
+require('database.php');
+/*** Start the session.***/
+session_start();
+
+// /**
+//  * Check if the user is admin logged in.
+//  */
+// // if (isset($_SESSION['user_id']) && $_SESSION['user_id'] != 37) {
+// //     //User not logged in. Redirect them back to the login.php page.
+// //     header('Location: login.php');
+// //     exit;
+
+// // }
+//     if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] != 37 || !isset($_SESSION['logged_in'])) {
+//         //User not logged in. Redirect them back to the login.php page.
+//     header('Location: login.php');
+//         echo 'Sorry No Access unless Admin';
+//         exit;
+//     } else {
+//         echo 'Hello Admin !';
+//     }
+
+/**
+ * Print out something that only logged in users can see.
+ */
+
+echo 'Congratulations! You are logged in!';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,8 +36,8 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>El-Care</title>
-  <!-- <meta content="" name="description">
-  <meta content="" name="keywords"> -->
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon-logo.png" rel="icon">
@@ -29,13 +59,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/mystyle.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Sailor - v4.9.1
-  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -54,8 +77,9 @@
           <li><a href="testimonials.html">Testimonials</a></li>
           <li><a href="services.html">Services Offered</a></li>
           <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="login.html" class="getstarted" type="submit" id="signOut" name="signOut_submit"
-              value="signOut">Log Out</a></li>
+          <li>
+            <a href="logout.php" class="text-dark">Logout</a>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -210,102 +234,4 @@
   <script src="assets/js/main.js"></script>
 
 </body>
-
-<!-- Firebase Authentication -->
-<script type="module">
-
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-  import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
-  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyDun7AR84vlMvvKbhohwn8afRKRh6htpTI",
-    authDomain: "el-care-f4bdf.firebaseapp.com",
-    databaseURL: "https://el-care-f4bdf-default-rtdb.firebaseio.com",
-    projectId: "el-care-f4bdf",
-    storageBucket: "el-care-f4bdf.appspot.com",
-    messagingSenderId: "121808468776",
-    appId: "1:121808468776:web:21a85ab79d95043d912e1d"
-  };
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const database = getDatabase(app);
-  const auth = getAuth();
-
-  signIn.addEventListener('click', (e) => {
-    var email = document.getElementById('email').value;
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
-    signInWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        // Signed in 
-        const user = userCredential.user;
-        const dt = new Date();
-        update(ref(database, 'users/' + user.uid), {
-          last_login: username,
-        })
-        alert('User Logged In !');
-        // ...
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        alert(errorMessage);
-      });
-  });
-
-  signUp.addEventListener('click', (e) => {
-    var email = document.getElementById('email').value;
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        // Signed in 
-        const user = userCredential.user;
-        set(ref(database, 'users/' + user.uid), {
-          username: username,
-          email: email
-        })
-        alert('user created !');
-        // ...
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        alert(errorMessage);
-        // ..
-      });
-  });
-
-  const user = auth.currentUser;
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      // User is signed in, see docs for a list of available properties
-      // https://firebase.google.com/docs/reference/js/firebase.User
-      const uid = user.uid;
-      // ...
-    } else {
-      // User is signed out
-      // ...
-    }
-  });
-
-  signOut.addEventListener('click', (e) => {
-    signOut(auth).then(() => {
-      // Sign-out successful.
-      alert('User Logged Out !');
-    }).catch((error) => {
-      // An error happened.
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      alert(errorMessage);
-    });
-  });
-
-</script>
-
 </html>

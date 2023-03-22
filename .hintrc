@@ -45,6 +45,8 @@
       {
         "duplicate-id-active": "off"
       }
-    ]
+    ],
+    "meta-viewport": "off",
+    "apple-touch-icons": "off"
   }
 }
