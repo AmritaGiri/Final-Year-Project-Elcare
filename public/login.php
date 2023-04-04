@@ -111,5 +111,5 @@ if (isset($_POST['login'])) {
     </div>
 
 </body>
-
+<script src="assets/js/login&registration-validation.js"></script>
 </html>

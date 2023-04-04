@@ -3,27 +3,7 @@ require('database.php');
 /*** Start the session.***/
 session_start();
 
-// /**
-//  * Check if the user is admin logged in.
-//  */
-// // if (isset($_SESSION['user_id']) && $_SESSION['user_id'] != 37) {
-// //     //User not logged in. Redirect them back to the login.php page.
-// //     header('Location: login.php');
-// //     exit;
-
-// // }
-//     if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] != 37 || !isset($_SESSION['logged_in'])) {
-//         //User not logged in. Redirect them back to the login.php page.
-//     header('Location: login.php');
-//         echo 'Sorry No Access unless Admin';
-//         exit;
-//     } else {
-//         echo 'Hello Admin !';
-//     }
-
-/**
- * Print out something that only logged in users can see.
- */
+/*** Print out something that only logged in users can see. ***/
 
 echo 'Congratulations! You are logged in!';
 ?>
@@ -153,15 +133,15 @@ echo 'Congratulations! You are logged in!';
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             <p>
-              Detailed /Brief of what our company does
+            An elderly service booking company is a specialized organization that connects seniors with a variety of services tailored to their unique needs and preferences. These companies aim to improve the quality of life for older adults
             </p>
             <ul>
-              <li><i class="ri-check-double-line"></i> Mention some point if needed</li>
-              <li><i class="ri-check-double-line"></i> Mention some point if needed</li>
-              <li><i class="ri-check-double-line"></i> Mention some point if needed</li>
+              <li><i class="ri-check-double-line"></i> Booking and Scheduling</li>
+              <li><i class="ri-check-double-line"></i> Assessing Needs</li>
+              <li><i class="ri-check-double-line"></i> Family and Caregiver Communication</li>
             </ul>
             <p class="fst-italic">
-              Write a qoute or philosophy of our project
+            At Golden Moments, we believe in weaving cherished memories by connecting hearts and enriching lives. Our commitment to personalized, compassionate care transcends generations, as we help seniors embrace their golden years with joy, dignity, and independence.
             </p>
           </div>
         </div>
