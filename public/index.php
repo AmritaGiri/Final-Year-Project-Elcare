@@ -3,6 +3,12 @@ require('database.php');
 /*** Start the session.***/
 session_start();
 
+// Check if the user is logged in, if not, redirect to the login page
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+  header('Location: login.php');
+  exit;
+}
+
 /*** Print out something that only logged in users can see. ***/
 
 echo 'Congratulations! You are logged in!';
@@ -133,7 +139,9 @@ echo 'Congratulations! You are logged in!';
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             <p>
-            An elderly service booking company is a specialized organization that connects seniors with a variety of services tailored to their unique needs and preferences. These companies aim to improve the quality of life for older adults
+              An elderly service booking company is a specialized organization that connects seniors with a variety of
+              services tailored to their unique needs and preferences. These companies aim to improve the quality of
+              life for older adults
             </p>
             <ul>
               <li><i class="ri-check-double-line"></i> Booking and Scheduling</li>
@@ -141,7 +149,9 @@ echo 'Congratulations! You are logged in!';
               <li><i class="ri-check-double-line"></i> Family and Caregiver Communication</li>
             </ul>
             <p class="fst-italic">
-            At Golden Moments, we believe in weaving cherished memories by connecting hearts and enriching lives. Our commitment to personalized, compassionate care transcends generations, as we help seniors embrace their golden years with joy, dignity, and independence.
+              At Golden Moments, we believe in weaving cherished memories by connecting hearts and enriching lives. Our
+              commitment to personalized, compassionate care transcends generations, as we help seniors embrace their
+              golden years with joy, dignity, and independence.
             </p>
           </div>
         </div>
@@ -214,4 +224,5 @@ echo 'Congratulations! You are logged in!';
   <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>

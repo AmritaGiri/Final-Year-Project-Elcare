@@ -19,7 +19,8 @@ include 'connect.php';
 <body>
     <div class="container">
         <button class="btn btn-primary my-5">
-            <a href="user.php" class="text-light">Add Booking</a>
+            <!-- <a href="user.php" class="text-light">Add Booking</a> -->
+            <a href="admin-login.php" class="text-light">Log Out</a>
         </button>
 
         <table class="table">
@@ -52,8 +53,8 @@ include 'connect.php';
                         <td>' . $phone . '</td>
                         <td>' . $address . '</td>
                         <td>
-    <button class="btn btn-primary"><a href="update.php? updateid='.$id.'" class="text-light">Update</a></button>
-    <button class="btn btn-danger"><a href="delete.php? deleteid='.$id.'" class="text-light">Delete</a></button>
+    <button class="btn btn-primary"><a href="update.php? updateid=' . $id . '" class="text-light">Update</a></button>
+    <button class="btn btn-danger"><a href="delete.php? deleteid=' . $id . '" class="text-light">Delete</a></button>
 </td>
                     </tr>';
                     }
