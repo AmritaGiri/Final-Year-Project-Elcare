@@ -106,7 +106,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
                 <input type="submit" name="login" value="Login">
                 <p>Already have an Account?
                     <a href="register.php">Register Here</a>
-                    <a href="admin-login.php">ADMIN LOGIN</a>
+                    <a href="admin-login.php">Amin Login</a>
                 </p>
             </form>
         </div>
