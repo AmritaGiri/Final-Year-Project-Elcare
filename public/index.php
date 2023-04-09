@@ -3,15 +3,15 @@ require('database.php');
 /*** Start the session.***/
 session_start();
 
-// Check if the user is logged in, if not, redirect to the login page
-if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
-  header('Location: login.php');
-  exit;
-}
+// // Check if the user is logged in, if not, redirect to the login page
+// if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+//   header('Location: login.php');
+//   exit;
+// }
 
 /*** Print out something that only logged in users can see. ***/
 
-echo 'Congratulations! You are logged in!';
+// echo 'Congratulations! You are logged in!';
 ?>
 
 <!DOCTYPE html>
@@ -53,7 +53,7 @@ echo 'Congratulations! You are logged in!';
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">El-Care</a></h1>
+      <h1 class="logo me-auto"><a href="index.php">El-Care</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -162,7 +162,7 @@ echo 'Congratulations! You are logged in!';
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
+  <!-- <footer id="footer">
     <div class="footer-top">
       <div class="container">
         <div class="row">
@@ -207,7 +207,7 @@ echo 'Congratulations! You are logged in!';
         </div>
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer>End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
