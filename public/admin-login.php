@@ -1,5 +1,11 @@
 <?php
 require("connect.php");
+
+/**
+ * Include ircmaxell's password_compat library.
+ */
+require 'password.php';
+
 ?>
 
 <html>

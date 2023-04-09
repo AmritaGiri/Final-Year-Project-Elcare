@@ -35,10 +35,10 @@
       <h1 class="logo me-auto"><a href="index.php">El-Care</a></h1>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
-          <li><a href="services.html">Services Offered</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.php">About Us</a></li>
+          <li><a href="testimonials.php">Testimonials</a></li>
+          <li><a href="services.php">Services Offered</a></li>
+          <li><a href="contact.php">Contact Us</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -174,6 +174,7 @@
     </div>
   </footer> -->
   <!-- End Footer -->
+  </body>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
@@ -189,6 +190,6 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/contact&payment form-validation.js"></script>
-</body>
+
 
 </html>

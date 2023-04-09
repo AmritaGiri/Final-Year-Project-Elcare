@@ -13,9 +13,7 @@
   <link href="assets/img/favicon-logo.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -39,10 +37,10 @@
       <h1 class="logo me-auto"><a href="index.php">El-Care</a></h1>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
-          <li><a href="services.html">Services Offered</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.php">About Us</a></li>
+          <li><a href="testimonials.php">Testimonials</a></li>
+          <li><a href="services.php">Services Offered</a></li>
+          <li><a href="contact.php">Contact Us</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -73,28 +71,28 @@
           <div class="col-md-6">
             <div class="icon-box">
               <i class="bi bi-briefcase"></i>
-              <h4><a href="crashcourse.html">Crash Course Internet</a></h4>
+              <h4><a href="crashcourse.php">Crash Course Internet</a></h4>
               <p>A Crash Course in Internet: Master the Online World</p>
             </div>
           </div>
           <div class="col-md-6 mt-4 mt-md-0">
             <div class="icon-box">
               <i class="bi bi-card-checklist"></i>
-              <h4><a href="hospitaltravel.html">Volunteer for Hospital Travel</a></h4>
+              <h4><a href="hospitaltravel.php">Volunteer for Hospital Travel</a></h4>
               <p>Volunteer Travel Adventures: Discover, Connect, and Make a Difference</p>
             </div>
           </div>
           <div class="col-md-6 mt-4 mt-md-0">
             <div class="icon-box">
               <i class="bi bi-bar-chart"></i>
-              <h4><a href="medicinedelivery.html">Pickup and Drop Medicines</a></h4>
+              <h4><a href="medicinedelivery.php">Pickup and Drop Medicines</a></h4>
               <p>Hassle-Free Medicine Pickup & Drop Service</p>
             </div>
           </div>
           <div class="col-md-6 mt-4 mt-md-0">
             <div class="icon-box">
               <i class="bi bi-binoculars"></i>
-              <h4><a href="publicoffice.html">Accompany to Bank/Revenue Office</a></h4>
+              <h4><a href="publicoffice.php">Accompany to Bank/Revenue Office</a></h4>
               <p>PubliServe: Streamlined Public Office Pickup & Drop Solutions</p>
             </div>
           </div>
@@ -269,20 +267,20 @@
     </div>
   </footer> -->
   <!-- End Footer -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
 </body>
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
 
 </html>

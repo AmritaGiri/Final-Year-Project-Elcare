@@ -10,6 +10,11 @@
     <link href="assets/img/favicon-logo.png" rel="icon">
     <link href="assets/img/favicon-logo.png" rel="apple-touch-icon">
 
+
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
+
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -37,10 +42,10 @@
             <h1 class="logo me-auto"><a href="index.php">El-Care</a></h1>
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="services.html">Services Offered</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="testimonials.php">Testimonials</a></li>
+                    <li><a href="services.php">Services Offered</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
@@ -55,7 +60,7 @@
         <section id="breadcrumbs" class="breadcrumbs">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h2>Accompany to Public Office</h2>
+                    <h2>Crash Course</h2>
                     <ol>
                         <li><a href="index.php">Home</a></li>
                         <li>Team</li>
@@ -65,11 +70,12 @@
         </section>
         <!-- ======= End Breadcrumbs ======= -->
 
-        <!-- ======= Public Form ======= -->
+        <!-- ======= Crash Course Form ======= -->
+
         <button class="btn btn-primary my-5">
             <a href="user.php" class="text-light">Create a Booking for yourself</a>
         </button>
-        <!-- ======= Public Form ======= -->
+        <!-- ======= End Crash Course Form ======= -->
 
     </main>
     <!-- End #main -->
@@ -122,6 +128,7 @@
         </div>
     </footer> -->
     <!-- End Footer -->
+    </body>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
 
@@ -136,6 +143,5 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
-</body>
 
 </html>

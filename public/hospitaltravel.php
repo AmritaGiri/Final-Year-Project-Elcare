@@ -37,10 +37,10 @@
             <h1 class="logo me-auto"><a href="index.php">El-Care</a></h1>
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="services.html">Services Offered</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="testimonials.php">Testimonials</a></li>
+                    <li><a href="services.php">Services Offered</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
@@ -55,7 +55,7 @@
         <section id="breadcrumbs" class="breadcrumbs">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h2>Day Tour of you're Work</h2>
+                    <h2>Hospital Travel</h2>
                     <ol>
                         <li><a href="index.php">Home</a></li>
                         <li>Team</li>
@@ -65,18 +65,17 @@
         </section>
         <!-- ======= End Breadcrumbs ======= -->
 
-        <!-- ======= Day Tour Form ======= -->
-
+        <!-- ======= Hospital Travel Form ======= -->
         <button class="btn btn-primary my-5">
-            <a href="display.php" class="text-light">Create a Booking for yourself</a>
+            <a href="user.php" class="text-light">Create a Booking for yourself</a>
         </button>
-        <!-- ======= End Day Tour Form ======= -->
+        <!-- ======= Hospital Travel Form ======= -->
 
     </main>
     <!-- End #main -->
 
     <!-- ======= Footer ======= -->
-    <footer id="footer">
+    <!-- <footer id="footer">
         <div class="footer-top">
             <div class="container">
                 <div class="row">
@@ -121,7 +120,11 @@
                 </div>
             </div>
         </div>
-    </footer><!-- End Footer -->
+    </footer> -->
+    <!-- End Footer -->
+
+
+    </body>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
 
@@ -135,7 +138,4 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-
-</body>
-
 </html>

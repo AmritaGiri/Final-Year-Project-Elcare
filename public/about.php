@@ -4,16 +4,17 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
   <title>El-Care</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon-logo.png" rel="icon">
   <link href="assets/img/favicon-logo.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -29,22 +30,29 @@
 </head>
 
 <body>
-
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
+
       <h1 class="logo me-auto"><a href="index.php">El-Care</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
-          <li><a href="services.html">Services Offered</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.php">About Us</a></li>
+          <li><a href="testimonials.php">Testimonials</a></li>
+          <li><a href="services.php">Services Offered</a></li>
+          <li><a href="contact.php">Contact Us</a></li>
+          <li>
+            <a href="logout.php" class="text-dark">Logout</a>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
   <main id="main">
     <!-- ======= Breadcrumbs ======= -->
@@ -191,9 +199,9 @@
       </div>
     </section><!-- End Our Skills Section -->
 
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
+  </main>
+  <!-- End #main -->
+    <!-- ======= Footer ======= -->
   <!-- <footer id="footer">
     <div class="footer-top">
       <div class="container">
@@ -239,7 +247,10 @@
         </div>
       </div>
     </div>
-  </footer>End Footer -->
+  </footer> -->
+  <!-- End Footer -->
+
+  </body>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
@@ -254,6 +265,4 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-</body>
-
 </html>

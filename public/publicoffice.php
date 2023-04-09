@@ -10,15 +10,8 @@
     <link href="assets/img/favicon-logo.png" rel="icon">
     <link href="assets/img/favicon-logo.png" rel="apple-touch-icon">
 
-
-    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
-
-
     <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -42,10 +35,10 @@
             <h1 class="logo me-auto"><a href="index.php">El-Care</a></h1>
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="services.html">Services Offered</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="testimonials.php">Testimonials</a></li>
+                    <li><a href="services.php">Services Offered</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
@@ -60,7 +53,7 @@
         <section id="breadcrumbs" class="breadcrumbs">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h2>Crash Course</h2>
+                    <h2>Accompany to Public Office</h2>
                     <ol>
                         <li><a href="index.php">Home</a></li>
                         <li>Team</li>
@@ -70,12 +63,11 @@
         </section>
         <!-- ======= End Breadcrumbs ======= -->
 
-        <!-- ======= Crash Course Form ======= -->
-
+        <!-- ======= Public Form ======= -->
         <button class="btn btn-primary my-5">
             <a href="user.php" class="text-light">Create a Booking for yourself</a>
         </button>
-        <!-- ======= End Crash Course Form ======= -->
+        <!-- ======= Public Form ======= -->
 
     </main>
     <!-- End #main -->
@@ -128,53 +120,20 @@
         </div>
     </footer> -->
     <!-- End Footer -->
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-
-
-    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"></script>
-    <!-- Firebase Authentication -->
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-        // import * as firebase from 'firebase/app';
-        import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyCgLgeiHCe7keqw6lljPaB4TWx5oYyQSF4",
-            authDomain: "elcare-crud-9e81c.firebaseapp.com",
-            databaseURL: "https://elcare-crud-9e81c-default-rtdb.firebaseio.com/",
-            projectId: "elcare-crud-9e81c",
-            storageBucket: "elcare-crud-9e81c.appspot.com",
-            messagingSenderId: "153749159908",
-            appId: "1:153749159908:web:77ffbab9564afe52ef11f1"
-        };
-
-        firebase.initializeApp(firebaseConfig);
-
-        // Get a reference to the database instance
-        const database = firebase.database();
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        //const database = getDatabase(app);
-    </script>
-    <script src="assets/js/crud.js"></script>
 </body>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
 
 </html>
