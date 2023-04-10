@@ -1,83 +1,10 @@
 <?php
-// require("connect.php");
-
-// /**
-//  * Include ircmaxell's password_compat library.
-//  */
-// require 'password.php';
-
-
-
-//admin-login.php
-
-/**
- * Start the session.
- */
-session_start();
-
+require("connect.php");
 
 /**
  * Include ircmaxell's password_compat library.
  */
 require 'password.php';
-require("connect.php");
-
-/**
- * Include our MySQL connection.
- */
-require 'login_connect.php';
-
-
-//If the POST var "login" exists (our submit button), then we can
-//assume that the user has submitted the login form.
-if (isset($_POST['login'])) {
-
-    //Retrieve the field values from our login form.
-    $Admin_Name = !empty($_POST['AdminName']) ? trim($_POST['AdminName']) : null;
-    $passwordAttempt = !empty($_POST['AdminPassword']) ? trim($_POST['AdminPassword']) : null;
-
-    //Retrieve the user account information for the given username.
-    $sql = "SELECT Admin_Name, Admin_Password FROM admin-login WHERE Admin_Name = :Admin_Name";
-    $stmt = $pdo->prepare($sql);
-
-    //Bind value.
-    $stmt->bindValue(':Admin_Name', $Admin_Name);
-
-    //Execute.
-    $stmt->execute();
-
-    //Fetch row.
-    $user = $stmt->fetch(PDO::FETCH_ASSOC);
-
-    //If $row is FALSE.
-    if ($user === false) {
-        //Could not find a user with that username!
-        //PS: You might want to handle this error in a more user-friendly manner!
-        die('Incorrect username / password combination!');
-    } else {
-        //User account found. Check to see if the given password matches the
-        //password hash that we stored in our users table.
-
-        //Compare the passwords.
-        $validPassword = password_verify($passwordAttempt, $user['AdminPassword']);
-
-        //If $validPassword is TRUE, the login has been successful.
-        if ($validPassword) {
-
-            //Provide the user with a login session.
-            $_SESSION['user_id'] = $user['id'];
-            $_SESSION['logged_in'] = time();
-
-            //Redirect to our protected page, which we called home.php
-            header('Location: display.php');
-            exit;
-        } else {
-            //$validPassword was FALSE. Passwords do not match.
-            die('Incorrect username / password combination!');
-        }
-    }
-}
-
 ?>
 
 <html>
