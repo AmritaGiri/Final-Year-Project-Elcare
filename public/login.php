@@ -1,5 +1,7 @@
 <?php
 
+//login.php
+
 /**
  * Start the session.
  */
@@ -24,10 +26,9 @@ if (isset($_POST['login'])) {
     //Retrieve the field values from our login form.
     $username = !empty($_POST['username']) ? trim($_POST['username']) : null;
     $passwordAttempt = !empty($_POST['password']) ? trim($_POST['password']) : null;
-    $email = !empty($_POST['email']) ? trim($_POST['email']) : null;
 
     //Retrieve the user account information for the given username.
-    $sql = "SELECT id, username, password,email FROM users WHERE username = :username";
+    $sql = "SELECT id, username, password FROM users WHERE username = :username";
     $stmt = $pdo->prepare($sql);
 
     //Bind value.
@@ -44,10 +45,7 @@ if (isset($_POST['login'])) {
         //Could not find a user with that username!
         //PS: You might want to handle this error in a more user-friendly manner!
         die('Incorrect username / password combination!');
-    } else
-    // if($user['username']=='admin')
-
-    {
+    } else {
         //User account found. Check to see if the given password matches the
         //password hash that we stored in our users table.
 
@@ -59,9 +57,6 @@ if (isset($_POST['login'])) {
 
             //Provide the user with a login session.
             $_SESSION['user_id'] = $user['id'];
-
-            // $_SESSION['admin'] = $user['id'];
-
             $_SESSION['logged_in'] = time();
 
             //Redirect to our protected page, which we called home.php
@@ -73,41 +68,29 @@ if (isset($_POST['login'])) {
         }
     }
 }
-?>
 
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>El-Care</title>
+    <meta charset="UTF-8">
+    <title>Login</title>
 </head>
 
 <body>
-    <div>
-
-        <div class="container">
-            <h1>Login</h1>
-            <form action="login.php" id="add_record_form" method="post">
-
-                <label for="username">Username:</label>
-                <input type="text" name="username" id="username" required placeholder="Simon Clarke" class="text-input" onBlur="username_validation();" /><span id="name_err"></span>
-                <br>
-
-                <label for="password">Password: </label>
-                <input type="password" name="password" id="password" required placeholder="Simonclarke123" class="text-input" onBlur="password_validation();" /><span id="password_err"></span>
-                <br>
-
-                <input type="submit" name="login" value="Login">
-                <p>Already have an Account?
-                    <a href="register.php">Register Here</a>
-                    <a href="admin-login.php">Admin Login</a>
-                </p>
-            </form>
-        </div>
-    </div>
-
+    <h1>Login</h1>
+    <form action="login.php" method="post">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required placeholder="Simon Clarke"><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required placeholder="Simonclarke123"><br>
+        <input type="submit" name="login" value="Login">
+        <p>Already have an Account?
+            <a href="register.php">Register Here</a>
+            <a href="admin-login.php">Admin Login</a>
+        </p>
+    </form>
 </body>
 
 </html>

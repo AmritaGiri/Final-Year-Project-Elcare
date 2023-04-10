@@ -1,4 +1,5 @@
 <?php
+
 //register.php
 
 /**
@@ -24,7 +25,6 @@ if (isset($_POST['register'])) {
     //Retrieve the field values from our registration form.
     $username = !empty($_POST['username']) ? trim($_POST['username']) : null;
     $pass = !empty($_POST['password']) ? trim($_POST['password']) : null;
-    $email = !empty($_POST['email']) ? trim($_POST['email']) : null;
 
     //TO ADD: Error checking (username characters, password length, etc).
     //Basically, you will need to add your own error checking BEFORE
@@ -58,13 +58,12 @@ if (isset($_POST['register'])) {
 
     //Prepare our INSERT statement.
     //Remember: We are inserting a new row into our users table.
-    $sql = "INSERT INTO users (username, password,email) VALUES (:username, :password,:email)";
+    $sql = "INSERT INTO users (username, password) VALUES (:username, :password)";
     $stmt = $pdo->prepare($sql);
 
     //Bind our variables.
     $stmt->bindValue(':username', $username);
     $stmt->bindValue(':password', $passwordHash);
-    $stmt->bindValue(':email', $email);
 
     //Execute the statement and insert the new account.
     $result = $stmt->execute();
@@ -75,50 +74,28 @@ if (isset($_POST['register'])) {
         echo 'Thank you for registering with our website.';
     }
 }
-?>
 
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>El-Care</title>
+    <meta charset="UTF-8">
+    <title>Register</title>
 </head>
 
 <body>
-    <div>
-
-        <div class="container">
-
-            <h1>Register</h1>
-            <form action="register.php" id="add_record_form" method="post">
-
-            <h2> Sign Up </h2>
-        <h4>Please fill this form to create an account<br>
-            <span>All fields are required</span>
-        </h4>
-
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email" required placeholder="emilyforest@gmail.com"
-                    class="text-input" onBlur="email_validation();" /><span id="email_err"></span>
-                <br>
-                <label for="username">User Name:</label>
-                <input type="text" name="username" id="username" required placeholder="Emily Forest" class="text-input"
-                    onBlur="username_validation();" /><span id="name_err"></span>
-                <br>
-                <label for="password">Password:</label>
-                <input type="password" name="password" id="password" required placeholder="Emilyforest123"
-                    class="text-input" onBlur="password_validation();" /><span id="password_err"></span>
-                <br>
-                <input type="submit" name="register" value="Register"></button>
-                <p>Already have an Account?
+    <h1>Register</h1>
+    <form action="register.php" method="post">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required placeholder="Emily Forest"><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required placeholder="Emilyforest123"><br>
+        <input type="submit" name="register" value="Register"></button>
+        <p>Already have an Account?
             <a href="login.php">Login Here</a>
         </p>
-            </form>
-
-        </div>
-    </div>
+    </form>
 </body>
-<script src="assets/js/login&registration-validation.js"></script>
+
 </html>
