@@ -71,28 +71,28 @@
           <div class="col-md-6">
             <div class="icon-box">
               <i class="bi bi-briefcase"></i>
-              <h4><a href="crashcourse.php">Crash Course Internet</a></h4>
+              <h4><a href="user.php">Crash Course Internet</a></h4>
               <p>A Crash Course in Internet: Master the Online World</p>
             </div>
           </div>
           <div class="col-md-6 mt-4 mt-md-0">
             <div class="icon-box">
               <i class="bi bi-card-checklist"></i>
-              <h4><a href="hospitaltravel.php">Volunteer for Hospital Travel</a></h4>
+              <h4><a href="user.php">Volunteer for Hospital Travel</a></h4>
               <p>Volunteer Travel Adventures: Discover, Connect, and Make a Difference</p>
             </div>
           </div>
           <div class="col-md-6 mt-4 mt-md-0">
             <div class="icon-box">
               <i class="bi bi-bar-chart"></i>
-              <h4><a href="medicinedelivery.php">Pickup and Drop Medicines</a></h4>
+              <h4><a href="user.php">Pickup and Drop Medicines</a></h4>
               <p>Hassle-Free Medicine Pickup & Drop Service</p>
             </div>
           </div>
           <div class="col-md-6 mt-4 mt-md-0">
             <div class="icon-box">
               <i class="bi bi-binoculars"></i>
-              <h4><a href="publicoffice.php">Accompany to Bank/Revenue Office</a></h4>
+              <h4><a href="user.php">Accompany to Bank/Revenue Office</a></h4>
               <p>PubliServe: Streamlined Public Office Pickup & Drop Solutions</p>
             </div>
           </div>

@@ -3,15 +3,11 @@ require('database.php');
 /*** Start the session.***/
 session_start();
 
-// // Check if the user is logged in, if not, redirect to the login page
-// if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
-//   header('Location: login.php');
-//   exit;
+// if (!isset($_SESSION['username'])) {
+//     // Redirect to login.php if the user is not logged in.
+//     header('Location: login.php');
+//     exit;
 // }
-
-/*** Print out something that only logged in users can see. ***/
-
-// echo 'Congratulations! You are logged in!';
 ?>
 
 <!DOCTYPE html>
