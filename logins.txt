@@ -1,5 +1,8 @@
 Amrita : Username Admin
-12345 : Password Admin
+AdminAmrita : Password Admin
+
+Tucha : Username Admin
+AdminTucha : Password Admin
 
 amrita : Username
 amrita123 : Password
