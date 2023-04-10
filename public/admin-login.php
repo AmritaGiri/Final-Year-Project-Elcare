@@ -43,14 +43,14 @@ require 'password.php';
 
     <div class="login-form">
         <h2>ADMIN LOGIN</h2>
-        <form method="POST">
+        <form method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>">
             <div class="input-field">
                 <i class="bi bi-person-circle"></i>
                 <input type="text" placeholder="Admin Name" name="AdminName">
             </div>
             <div class="input-field">
                 <i class="bi bi-shield-lock"></i>
-                <input type="password" placeholder="Password" name="AdminPassword">
+                <input type="password" placeholder="Admin Password" name="AdminPassword">
             </div>
 
             <button type="submit" name="Signin">Sign In</button>
@@ -76,6 +76,7 @@ require 'password.php';
             echo "<script>alert('Incorrect Password');</script>";
         }
     }
+
     ?>
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
