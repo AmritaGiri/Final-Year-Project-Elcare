@@ -82,9 +82,9 @@ if (isset($_POST['login'])) {
     <h1>Login</h1>
     <form action="login.php" method="post">
         <label for="username">Username</label>
-        <input type="text" id="username" name="username" required placeholder="Simon Clarke"><br>
+        <input type="text" id="username" name="username" required placeholder="Username"><br>
         <label for="password">Password</label>
-        <input type="password" id="password" name="password" required placeholder="Simonclarke123"><br>
+        <input type="password" id="password" name="password" required placeholder="Password"><br>
         <input type="submit" name="login" value="Login">
         <p>Already have an Account?
             <a href="register.php">Register Here</a>

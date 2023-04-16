@@ -9,4 +9,3 @@ if (!$con) {
 // else {
 //     echo "Connected";
 // }
-?>

@@ -46,24 +46,22 @@ if (isset($_POST['submit'])) {
         <form method="POST">
             <div class="form-group">
                 <label>Name</label>
-                <input type="text" class="form-control" placeholder="Enter your Name" name="name" autocomplete="off" value=<?php echo $name;?>>
+                <input type="text" class="form-control" placeholder="Enter your Name" name="name" autocomplete="off" value=<?php echo $name; ?>>
             </div>
 
             <div class="form-group">
                 <label>Email</label>
-                <input type="email" class="form-control" placeholder="Enter your Email" name="email" autocomplete="off" value=<?php echo $email;?>>
+                <input type="email" class="form-control" placeholder="Enter your Email" name="email" autocomplete="off" value=<?php echo $email; ?>>
             </div>
 
             <div class="form-group">
                 <label>Phone</label>
-                <input type="text" class="form-control" placeholder="Enter your Phone Number" name="phone"
-                    autocomplete="off" value=<?php echo $phone;?>>
+                <input type="text" class="form-control" placeholder="Enter your Phone Number" name="phone" autocomplete="off" value=<?php echo $phone; ?>>
             </div>
 
             <div class="form-group">
                 <label>Address</label>
-                <input type="text" class="form-control" placeholder="Enter your Address" name="address"
-                    autocomplete="off" value=<?php echo $address;?>>
+                <input type="text" class="form-control" placeholder="Enter your Address" name="address" autocomplete="off" value=<?php echo $address; ?>>
             </div>
 
             <button type="submit" name="submit" class="btn btn-primary">Update</button>

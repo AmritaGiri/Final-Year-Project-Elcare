@@ -85,11 +85,11 @@ h6 {
   font-size: 14px;
 }
 
-.breadcrumbs ol li + li {
+.breadcrumbs ol li+li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li + li::before {
+.breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
   color: #6b7b8d;
@@ -100,15 +100,19 @@ h6 {
   .breadcrumbs {
     margin-top: 58px;
   }
+
   .breadcrumbs .d-flex {
     display: block !important;
   }
+
   .breadcrumbs h2 {
     margin-bottom: 10px;
   }
+
   .breadcrumbs ol {
     display: block;
   }
+
   .breadcrumbs ol li {
     display: inline-block;
   }
@@ -230,7 +234,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br + br {
+.contact .php-email-form .error-message br+br {
   margin-top: 25px;
 }
 
@@ -301,18 +305,22 @@ section {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -838,21 +846,26 @@ section {
   #hero {
     height: 100vh;
   }
+
   #hero .carousel-container {
     top: 8px;
   }
 }
+
 @media (max-width: 768px) {
   #hero h2 {
     font-size: 28px;
   }
 }
+
 @media (min-width: 1024px) {
+
   #hero .carousel-control-prev,
   #hero .carousel-control-next {
     width: 5%;
   }
 }
+
 @media (max-height: 500px) {
   #hero {
     height: 120vh;
@@ -906,7 +919,7 @@ section {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover > a {
+.navbar li:hover>a {
   color: #9fa0ff;
 }
 
@@ -958,11 +971,11 @@ section {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover > a {
+.navbar .dropdown ul li:hover>a {
   color: #9fa0ff;
 }
 
-.navbar .dropdown:hover > ul {
+.navbar .dropdown:hover>ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -974,7 +987,7 @@ section {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover > ul {
+.navbar .dropdown .dropdown:hover>ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -985,10 +998,12 @@ section {
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
-  .navbar .dropdown .dropdown:hover > ul {
+
+  .navbar .dropdown .dropdown:hover>ul {
     left: -100%;
   }
 }
+
 /**
 * Mobile Navigation 
 */
@@ -1009,10 +1024,12 @@ section {
   .mobile-nav-toggle {
     display: block;
   }
+
   .navbar ul {
     display: none;
   }
 }
+
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
@@ -1053,7 +1070,7 @@ section {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover > a {
+.navbar-mobile li:hover>a {
   color: #9fa0ff;
 }
 
@@ -1088,11 +1105,11 @@ section {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover > a {
+.navbar-mobile .dropdown ul li:hover>a {
   color: #9fa0ff;
 }
 
-.navbar-mobile .dropdown > .dropdown-active {
+.navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
 
@@ -1158,7 +1175,9 @@ section {
   font-style: italic;
   margin: 15px 0 0 0;
   padding: 0;
-}/*# sourceMappingURL=mystyle.css.map */
+}
+
+/*# sourceMappingURL=mystyle.css.map */
 
 
 /*--------------------------------------------------------------
@@ -1166,53 +1185,60 @@ section {
 // Here is where the admin-login styles start
 --------------------------------------------------------------*/
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: poppins;
   text-decoration: none;
 }
-body{
+
+body {
   background-color: #f2f4f6;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-div.login-form{
+
+div.login-form {
   width: 450px;
   background-color: white;
   box-shadow: 0px 5px 10px black;
 }
 
-div.login-form h2{
+div.login-form h2 {
   text-align: center;
   background-color: #204969;
   padding: 12px 0px;
   color: white;
 }
-div.login-form form{
+
+div.login-form form {
   padding: 30px 60px;
 }
-div.login-form form div.input-field{
+
+div.login-form form div.input-field {
   display: flex;
   flex-direction: row;
   margin: 10px 0px;
 }
-div.login-form form div.input-field i{
+
+div.login-form form div.input-field i {
   color: darkslategray;
   padding: 10px 14px;
   background-color: #f2f4f6;
   margin-right: 4px;
 }
-div.login-form form div.input-field input{
+
+div.login-form form div.input-field input {
   background-color: #f2f4f6;
   padding: 10px;
   border: none;
   width: 100%;
   padding-left: 15px;
 }
-div.login-form form button{
+
+div.login-form form button {
   width: 100%;
   background-color: #5bd1d7;
   padding: 8px;
@@ -1223,18 +1249,39 @@ div.login-form form button{
   margin: 15px 0;
   transition: background-color 0.4s;
 }
-div.login-form form button:hover{
+
+div.login-form form button:hover {
   background-color: #41b6e6;
 }
-div.login-form form div.extra{
+
+div.login-form form div.extra {
   font-size: 14px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-div.login-form form div.extra a:first-child{
+
+div.login-form form div.extra a:first-child {
   color: darkgrey;
 }
-div.login-form form div.extra a:last-child{
+
+div.login-form form div.extra a:last-child {
   color: grey;
+}
+
+
+/*--------------------------------------------------------------
+# Main Login
+// Here is where the Main Login styles start
+--------------------------------------------------------------*/
+
+body {
+  background: linear-gradient(90deg, #C7C5F4, #776BCC);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
