@@ -52,10 +52,10 @@
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Testimonials</h2>
+          <h2>Our Team</h2>
           <ol>
             <li><a href="index.php">Home</a></li>
-            <li>Testimonials</li>
+            <li>Our Team</li>
           </ol>
         </div>
       </div>
@@ -68,14 +68,12 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="testimonial-item">
-              <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-              <h3>Saul Goodman</h3>
-              <h4>Ceo &amp; Founder</h4>
+              <img src="assets/img/testimonials/james.jpg" class="testimonial-img" alt="">
+              <h3>James</h3>
+              <h4>Based in Dublin</h4>
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                I cannot express enough gratitude for the El-Care elderly service booking app. As someone responsible
-                for my aging parents' care, this app has been a true lifesaver. The easy-to-navigate platform has made
-                it incredibly simple to find and book services tailored to my parents' unique needs and preferences
+                One of the main responsibilities I had as a volunteer was to visit these individuals in their homes and provide them with companionship and assistance with tasks such as grocery shopping, meal preparation, and housekeeping. I also spent a lot of time simply chatting with them and listening to their stories, which I found to be incredibly enriching
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
             </div>
@@ -83,15 +81,12 @@
 
           <div class="col-lg-6">
             <div class="testimonial-item mt-4 mt-lg-0">
-              <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-              <h3>Sara Wilsson</h3>
-              <h4>Designer</h4>
+              <img src="assets/img/testimonials/rachel.jpg" class="testimonial-img" alt="">
+              <h3>Rachel</h3>
+              <h4>Based in Limerick</h4>
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Before discovering this app, managing my father's care and support services felt overwhelming and
-                time-consuming. However, El-Care has truly transformed our experience. The app is extremely
-                user-friendly, making it easy to navigate and find the appropriate services for my father's unique
-                needs.
+                Overall, my experience working with this elderly service providing company was incredibly rewarding. I learned so much from the individuals I worked with and felt like I was making a real difference in their lives. I would highly recommend volunteering with an organization like this to anyone who is interested in helping out in their community and making a positive impact on the lives of others
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
             </div>
@@ -99,15 +94,12 @@
 
           <div class="col-lg-6">
             <div class="testimonial-item mt-4">
-              <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-              <h3>Jena Karlis</h3>
-              <h4>Store Owner</h4>
+              <img src="assets/img/testimonials/gary.jpg" class="testimonial-img" alt="">
+              <h3>Gary</h3>
+              <h4>Based in Galway</h4>
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                I can't say enough about how much El-Care has impacted our family in the most positive way. My mother,
-                who is 78 years old, had been struggling with daily tasks and feeling isolated due to limited mobility.
-                We were unsure how to find the right support services to meet her needs, but SilverConnections made it
-                easy for us to find the perfect solution.
+                As a volunteer who has worked with an elderly service providing company for many years, I can tell you that it has been a truly rewarding experience. The company I worked with focused on providing support and care to elderly individuals who were living alone or had limited mobility
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
             </div>
@@ -115,16 +107,12 @@
 
           <div class="col-lg-6">
             <div class="testimonial-item mt-4">
-              <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
+              <img src="assets/img/testimonials/ana.jpg" class="testimonial-img" alt="">
+              <h3>Ana</h3>
+              <h4>Based in Cork</h4>
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Finding suitable services for my elderly parents was a daunting
-                and time-consuming task.To ensure they received the best care
-                possible, but coordinating the various services they needed was overwhelming. El-Care is incredibly
-                user-friendly and intuitive, making it easy to find,
-                book, and manage services tailored to my parents' unique needs.
+                Additionally, I have also helped with basic household tasks such as grocery shopping, meal preparation, and light housekeeping. In some cases, I have also provided transportation to appointments or assisted with personal care needs
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
             </div>

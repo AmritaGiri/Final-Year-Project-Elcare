@@ -55,6 +55,7 @@ session_start();
         <ul>
           <li><a href="about.php">About Us</a></li>
           <li><a href="testimonials.php">Testimonials</a></li>
+          <li><a href="ourteam.php">Our Team</a></li>
           <li><a href="services.php">Services Offered</a></li>
           <li><a href="contact.php">Contact Us</a></li>
           <li>
