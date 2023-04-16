@@ -7,9 +7,10 @@ if (isset($_POST['submit'])) {
   $address = $_POST['address'];
   $bookservice = $_POST['bookService'];
   $bookmember = $_POST['bookMember'];
+  $eventDT = $_POST['eventdt'];
 
 
-  $sql = "insert into `crud`(Name,Email,Phone,Address,bookService,bookMember) values('$name','$email','$phone','$address','$bookservice','$bookmember')";
+  $sql = "insert into `crud`(Name,Email,Phone,Address,bookService,bookMember,eventdt) values('$name','$email','$phone','$address','$bookservice','$bookmember','$eventDT')";
   $result = mysqli_query($con, $sql);
   if ($result) {
     echo "Data inserted successfully";
@@ -66,6 +67,11 @@ if (isset($_POST['submit'])) {
       <div class="form-group">
         <label>Book Member</label>
         <input type="text" class="form-control" placeholder="(Ana, Gary, Rachel, James)" name="bookMember" autocomplete="off">
+      </div>
+
+      <div class="form-group">
+        <label>Date & Time</label>
+        <input type="datetime-local" class="form-control" placeholder="Choose Youre Date and Time" name="eventdt" autocomplete="off">
       </div>
 
       <button type="submit" name="submit" class="btn btn-primary">Submit</button>

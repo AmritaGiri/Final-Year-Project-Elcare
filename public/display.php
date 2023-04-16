@@ -33,6 +33,7 @@ include 'connect.php';
                     <th scope="col">Address</th>
                     <th scope="col">Service Booked</th>
                     <th scope="col">Team Member Booked</th>
+                    <th scope="col">Date & Time Booked</th>
                     <th scope="col">Operations</th>
                 </tr>
             </thead>
@@ -50,6 +51,7 @@ include 'connect.php';
                         $address = $row['Address'];
                         $bookservice = $row['bookService'];
                         $bookmember = $row['bookMember'];
+                        $eventDT = $row['eventdt'];
                         echo '<tr>
                         <th scope="row">' . $id . '</th>
                         <td>' . $name . '</td>
@@ -58,8 +60,9 @@ include 'connect.php';
                         <td>' . $address . '</td>
                         <td>' . $bookservice . '</td>
                         <td>' . $bookmember . '</td>
+                        <td>' . $eventDT . '</td>
                         <td>
-    <button class="btn btn-primary"><a href="update.php? updateid=' . $id . '" class="text-light">Update</a></button>
+    <button class="btn btn-primary"><a href="update.php? updateid=' . $id . '" class="text-light">Update</a></button><br>
     <button class="btn btn-danger"><a href="delete.php? deleteid=' . $id . '" class="text-light">Delete</a></button>
 </td>
                     </tr>';

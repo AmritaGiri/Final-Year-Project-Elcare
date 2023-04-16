@@ -10,6 +10,7 @@ $phone = $row['Phone'];
 $address = $row['Address'];
 $bookservice = $row['bookService'];
 $bookmember = $row['bookMember'];
+$eventDT = $row['eventdt'];
 
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
@@ -18,8 +19,9 @@ if (isset($_POST['submit'])) {
     $address = $_POST['address'];
     $bookservice = $_POST['bookService'];
     $bookmember = $_POST['bookMember'];
+    $eventDT = $_POST['eventdt'];
 
-    $sql = "update `crud` set Id=$id,Name='$name',Email='$email',Phone='$phone',Address='$address',bookService='$bookservice',bookMember='$bookmember' where Id=$id";
+    $sql = "update `crud` set Id=$id,Name='$name',Email='$email',Phone='$phone',Address='$address',bookService='$bookservice',bookMember='$bookmember',eventdt='$eventDT' where Id=$id";
     $result = mysqli_query($con, $sql);
     if ($result) {
         //echo "Updated successfully";
@@ -76,6 +78,11 @@ if (isset($_POST['submit'])) {
             <div class="form-group">
                 <label>Book Member</label>
                 <input type="text" class="form-control" placeholder="(Ana, Gary, Rachel, James)" name="bookMember" autocomplete="off" value=<?php echo $bookmember; ?>>
+            </div>
+
+            <div class="form-group">
+                <label>Date & Time</label>
+                <input type="datetime-local" class="form-control" placeholder="Choose Youre Date and Time" name="eventdt" autocomplete="off" value=<?php echo $eventDT; ?>>
             </div>
 
             <button type="submit" name="submit" class="btn btn-primary">Update</button>
