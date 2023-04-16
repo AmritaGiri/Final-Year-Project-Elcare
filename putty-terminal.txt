@@ -1,0 +1,5 @@
+sudo mysql -u root -p :: Login for MySQL
+
+agiri@123 :: Login for mysql 
+
+Login for Instance on putty : ubuntu
