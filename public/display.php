@@ -31,6 +31,8 @@ include 'connect.php';
                     <th scope="col">Email</th>
                     <th scope="col">Phone</th>
                     <th scope="col">Address</th>
+                    <th scope="col">Service Booked</th>
+                    <th scope="col">Team Member Booked</th>
                     <th scope="col">Operations</th>
                 </tr>
             </thead>
@@ -46,12 +48,16 @@ include 'connect.php';
                         $email = $row['Email'];
                         $phone = $row['Phone'];
                         $address = $row['Address'];
+                        $bookservice = $row['bookService'];
+                        $bookmember = $row['bookMember'];
                         echo '<tr>
                         <th scope="row">' . $id . '</th>
                         <td>' . $name . '</td>
                         <td>' . $email . '</td>
                         <td>' . $phone . '</td>
                         <td>' . $address . '</td>
+                        <td>' . $bookservice . '</td>
+                        <td>' . $bookmember . '</td>
                         <td>
     <button class="btn btn-primary"><a href="update.php? updateid=' . $id . '" class="text-light">Update</a></button>
     <button class="btn btn-danger"><a href="delete.php? deleteid=' . $id . '" class="text-light">Delete</a></button>

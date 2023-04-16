@@ -8,14 +8,18 @@ $name = $row['Name'];
 $email = $row['Email'];
 $phone = $row['Phone'];
 $address = $row['Address'];
+$bookservice = $row['bookService'];
+$bookmember = $row['bookMember'];
 
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
     $email = $_POST['email'];
     $phone = $_POST['phone'];
     $address = $_POST['address'];
+    $bookservice = $_POST['bookService'];
+    $bookmember = $_POST['bookMember'];
 
-    $sql = "update `crud` set Id=$id,Name='$name',Email='$email',Phone='$phone',Address='$address' where Id=$id";
+    $sql = "update `crud` set Id=$id,Name='$name',Email='$email',Phone='$phone',Address='$address',bookService='$bookservice',bookMember='$bookmember' where Id=$id";
     $result = mysqli_query($con, $sql);
     if ($result) {
         //echo "Updated successfully";
@@ -62,6 +66,16 @@ if (isset($_POST['submit'])) {
             <div class="form-group">
                 <label>Address</label>
                 <input type="text" class="form-control" placeholder="Enter your Address" name="address" autocomplete="off" value=<?php echo $address; ?>>
+            </div>
+
+            <div class="form-group">
+                <label>Book Service</label>
+                <input type="text" class="form-control" placeholder="(1,2,3,4)" name="bookService" autocomplete="off" value=<?php echo $bookservice; ?>>
+            </div>
+
+            <div class="form-group">
+                <label>Book Member</label>
+                <input type="text" class="form-control" placeholder="(Ana, Gary, Rachel, James)" name="bookMember" autocomplete="off" value=<?php echo $bookmember; ?>>
             </div>
 
             <button type="submit" name="submit" class="btn btn-primary">Update</button>

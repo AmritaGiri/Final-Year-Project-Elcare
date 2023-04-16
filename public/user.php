@@ -5,11 +5,14 @@ if (isset($_POST['submit'])) {
   $email = $_POST['email'];
   $phone = $_POST['phone'];
   $address = $_POST['address'];
+  $bookservice = $_POST['bookService'];
+  $bookmember = $_POST['bookMember'];
 
-  $sql = "insert into `crud`(Name,Email,Phone,Address) values('$name','$email','$phone','$address')";
+
+  $sql = "insert into `crud`(Name,Email,Phone,Address,bookService,bookMember) values('$name','$email','$phone','$address','$bookservice','$bookmember')";
   $result = mysqli_query($con, $sql);
   if ($result) {
-    // echo "Data inserted successfully";
+    echo "Data inserted successfully";
     header('location:thankyou.php');
   } else {
     die(mysqli_error($con));
@@ -53,6 +56,16 @@ if (isset($_POST['submit'])) {
       <div class="form-group">
         <label>Address</label>
         <input type="text" class="form-control" placeholder="Enter your Address" name="address" autocomplete="off">
+      </div>
+
+      <div class="form-group">
+        <label>Book Service</label>
+        <input type="text" class="form-control" placeholder="(1,2,3,4)" name="bookService" autocomplete="off">
+      </div>
+
+      <div class="form-group">
+        <label>Book Member</label>
+        <input type="text" class="form-control" placeholder="(Ana, Gary, Rachel, James)" name="bookMember" autocomplete="off">
       </div>
 
       <button type="submit" name="submit" class="btn btn-primary">Submit</button>
