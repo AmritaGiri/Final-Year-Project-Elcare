@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 16, 2023 at 12:07 PM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 8.0.13
+-- Generation Time: Apr 22, 2023 at 06:58 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `admin-login` (
   `Admin_Name` varchar(100) NOT NULL,
   `Admin_Password` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `admin-login`
@@ -52,7 +52,7 @@ CREATE TABLE `crud` (
   `Email` varchar(100) NOT NULL,
   `Phone` varchar(20) NOT NULL,
   `Address` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `crud`
@@ -70,13 +70,34 @@ INSERT INTO `crud` (`Id`, `Name`, `Email`, `Phone`, `Address`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `employee-login`
+--
+
+CREATE TABLE `employee-login` (
+  `Employee_Name` varchar(100) NOT NULL,
+  `Employee_Password` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `employee-login`
+--
+
+INSERT INTO `employee-login` (`Employee_Name`, `Employee_Password`) VALUES
+('Gary', 'Gary123'),
+('Rachel', 'Rachel123'),
+('James', 'James123'),
+('Ana', 'Ana123');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
   `id` int(10) UNSIGNED NOT NULL,
-  `username` varchar(25) COLLATE utf8_unicode_ci NOT NULL,
-  `password` varchar(60) COLLATE utf8_unicode_ci NOT NULL
+  `username` varchar(25) NOT NULL,
+  `password` varchar(60) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
