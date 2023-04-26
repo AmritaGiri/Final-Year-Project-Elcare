@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 22, 2023 at 06:58 PM
+-- Generation Time: Apr 26, 2023 at 02:52 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -37,8 +37,7 @@ CREATE TABLE `admin-login` (
 --
 
 INSERT INTO `admin-login` (`Admin_Name`, `Admin_Password`) VALUES
-('Amrita', 'AdminAmrita'),
-('Tucha', 'AdminTucha');
+('Amrita', 'AdminAmrita');
 
 -- --------------------------------------------------------
 
@@ -51,21 +50,11 @@ CREATE TABLE `crud` (
   `Name` varchar(100) NOT NULL,
   `Email` varchar(100) NOT NULL,
   `Phone` varchar(20) NOT NULL,
-  `Address` varchar(255) NOT NULL
+  `Address` varchar(255) NOT NULL,
+  `bookService` varchar(100) NOT NULL,
+  `bookMember` varchar(100) NOT NULL,
+  `eventdt` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `crud`
---
-
-INSERT INTO `crud` (`Id`, `Name`, `Email`, `Phone`, `Address`) VALUES
-(7, 'Priya', 'priya@gmail.com', '08888888888', 'Dingle'),
-(9, 'Geeta', 'geeta@gmail.com', '7777777777', 'Cork City'),
-(10, 'Geeta', 'geeta@gmail.com', '7777777777', 'Limerick'),
-(12, 'Arthur', 'arthur@gmail.com', '9999999999', 'Latvia'),
-(13, 'Sahil', 'sahil@gmail.com', '1111111111', 'India'),
-(14, 'Qala', 'qala@gmail.com', '6666666666', 'Delhi'),
-(15, 'Qala', 'qalakumari@gmail.com', '1111111111', 'Mumbai');
 
 -- --------------------------------------------------------
 
@@ -106,7 +95,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `username`, `password`) VALUES
 (6, 'amrita', '$2y$12$NvX2psnNHXFulDDBxeuk8elRMDPw/oc9mCIZCBdY5W1O1rk5UusMK'),
-(7, 'chandan', '$2y$12$t2GVafa/9cZFCyx1zZailut2vG/vIt.k3j.PmtTAQmMB4QTFFerKu');
+(7, 'chandan', '$2y$12$t2GVafa/9cZFCyx1zZailut2vG/vIt.k3j.PmtTAQmMB4QTFFerKu'),
+(8, 'Mags', '$2y$12$.9BbuukegvlmrDgYvUeEJubr8uF7OcV4gvEUckd3BRcnAY/OPwfxO');
 
 --
 -- Indexes for dumped tables
@@ -139,7 +129,7 @@ ALTER TABLE `crud`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

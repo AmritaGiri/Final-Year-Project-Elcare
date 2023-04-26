@@ -104,19 +104,30 @@ if (isset($_POST['login'])) {
 </head>
 
 <body>
-    <h1>LOGIN</h1>
-    <form action="login.php" method="post">
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" required placeholder="Username"><br>
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required placeholder="Password"><br>
-        <input type="submit" name="login" value="Login">
-        <p>Already have an Account?
-            <a href="register.php">Register Here</a>
-            <a href="admin-login.php">Admin Login</a>
-            <a href="employee-login.php">Employee Login</a>
-        </p>
-    </form>
+
+    <div class="login-form">
+        <h2>USER LOGIN</h2>
+        <form method="POST" action="login.php">
+            <div class="input-field">
+                <i class="bi bi-person-circle"></i>
+                <input type="text" id="username" name="username" required placeholder="User Name">
+            </div>
+            <div class="input-field">
+                <i class="bi bi-shield-lock"></i>
+                <input type="password" id="password" name="password" required placeholder="User Password">
+            </div>
+            <!-- <a href="#">Forgot Password ?</a>
+                <a href="#">Create an Account</a> -->
+            <button type="submit" name="login" value="Login">LOGIN</button>
+
+            <div class="extra">
+                <a href="register.php">Register Here</a>
+                <a href="admin-login.php">Admin Login</a>
+                <a href="employee-login.php">Employee Login</a>
+            </div>
+
+        </form>
+    </div>
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

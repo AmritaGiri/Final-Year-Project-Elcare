@@ -110,8 +110,7 @@ if (isset($_POST['register'])) {
 </head>
 
 <body>
-    <h1>REGISTER</h1>
-    <form action="register.php" method="post">
+    <!-- <form action="register.php" method="post">
         <label for="username">Username</label>
         <input type="text" id="username" name="username" required placeholder="Emily Forest"><br>
         <label for="password">Password</label>
@@ -120,19 +119,42 @@ if (isset($_POST['register'])) {
         <p>Already have an Account?
             <a href="login.php">Login Here</a>
         </p>
-    </form>
+    </form> -->
+
+    <div class="login-form">
+        <h2>USER REGISTRATION</h2>
+        <form method="POST" action="register.php">
+            <div class="input-field">
+                <i class="bi bi-person-circle"></i>
+                <input type="text" id="username" name="username" required placeholder="User Name">
+            </div>
+            <div class="input-field">
+                <i class="bi bi-shield-lock"></i>
+                <input type="password" id="password" name="password" required placeholder="Password">
+            </div>
+
+            <button type="submit" name="register" value="Register">REGISTER</button>
+
+            <div class="extra">
+                <a href="admin-login.php">Admin Login</a>
+                <a href="login.php">User Login</a>
+                <a href="employee-login.php">Employee Login</a>
+            </div>
+        </form>
+    </div>
+
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-<!-- Vendor JS Files -->
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-<!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

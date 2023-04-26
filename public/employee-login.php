@@ -56,8 +56,9 @@ require 'password.php';
             <button type="submit" name="Signin">Sign In</button>
 
             <div class="extra">
-                <a href="#">Forgot Password ?</a>
-                <a href="#">Create an Account</a>
+                <a href="register.php">User Register</a>
+                <a href="login.php">User Login</a>
+                <a href="admin-login.php">Admin Login</a>
             </div>
 
         </form>
