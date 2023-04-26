@@ -4,9 +4,9 @@ require('database.php');
 session_start();
 
 // if (!isset($_SESSION['username'])) {
-//     // Redirect to login.php if the user is not logged in.
-//     header('Location: login.php');
-//     exit;
+//   // Redirect to login.php if the user is not logged in.
+//   header('Location: login.php');
+//   exit;
 // }
 
 ?>
