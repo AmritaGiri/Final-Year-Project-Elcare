@@ -654,6 +654,3 @@ function VWZ_IsChecked(objcheck, value) {
   }
   return false;
 }
-/*
-  Copyright (C) 2003-2009 JavaScript-Coder.com . All rights reserved.
-*/

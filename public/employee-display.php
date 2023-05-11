@@ -74,6 +74,3 @@ include 'connect.php';
 </body>
 
 </html>
-
-<!-- <button class="btn btn-primary"><a href="update.php? updateid=' . $id . '" class="text-light">Update</a></button><br>
-    <button class="btn btn-danger"><a href="delete.php? deleteid=' . $id . '" class="text-light">Delete</a></button> -->

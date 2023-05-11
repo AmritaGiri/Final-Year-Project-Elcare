@@ -1019,9 +1019,6 @@ section {
   padding: 0;
 }
 
-/*# sourceMappingURL=mystyle.css.map */
-
-
 /*--------------------------------------------------------------
 # All Login (Admin, Employee, User Login, User Registration)
 // Here is where the login styles start
@@ -1110,20 +1107,3 @@ div.login-form form div.extra a:first-child {
 div.login-form form div.extra a:last-child {
   color: grey;
 }
-
-
-/*--------------------------------------------------------------
-# Main Login
-// Here is where the Main Login styles start
---------------------------------------------------------------*/
-
-/* body {
-  background: linear-gradient(90deg, #C7C5F4, #776BCC);
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-} */
