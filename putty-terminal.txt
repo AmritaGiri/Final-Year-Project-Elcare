@@ -1,5 +1,6 @@
 sudo mysql -u root -p :: Login for MySQL
 
-agiri@123 :: Login for mysql 
+root :: username
+agiri@123 :: Login for mysql (phpmyadmin)
 
 Login for Instance on putty : ubuntu
